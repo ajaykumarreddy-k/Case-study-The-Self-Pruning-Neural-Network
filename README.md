@@ -34,9 +34,11 @@ A successful self-pruning network effectively maps gates to a bimodal distributi
 
 ## Repository Overview & Final Weights
 
+> ⚠️ **Note on Repositories & Weights:** To adhere to GitHub's file constraints, the raw CIFAR-10 `data/` and compiled `.pth` model `checkpoints/` are explicitly **not included** in this repository. Reviewers must run the training scripts locally (`uv run full_run.py`) to automatically download the dataset, train the configurations, and generate the final weights.
+
 | 📁 Directory / 📄 File | Description |
 |------------------------|-------------|
-| **`checkpoints/`** | 💾 **Final Weights:** Contains the saved model state dictionaries (`.pth` files) representing the fully trained and pruned network. |
+| **`checkpoints/`** | 💾 **Final Weights:** (Generated locally) Contains the saved model state dictionaries (`.pth` files) representing the fully trained and pruned network. |
 | **`assets/`** | 🎨 **Visualisations:** Final plots and images depicting training history curves and bimodal gate distributions. |
 | **`data/`** | 📊 **Dataset:** Raw CIFAR-10 dataset (auto-downloaded). |
 | `model.py` | Contains the `PrunableLinear` layer and `SelfPruningNet` core architecture. |
