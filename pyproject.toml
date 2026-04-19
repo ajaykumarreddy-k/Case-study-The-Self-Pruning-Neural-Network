@@ -1,0 +1,20 @@
+[project]
+name = "self-pruning-nn"
+version = "0.1.0"
+description = "Self-Pruning Neural Network Case Study for Tredence"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchvision",
+    "matplotlib",
+    "numpy",
+    "tqdm",
+]
+
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

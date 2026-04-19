@@ -1,0 +1,20 @@
+# Dataset
+data/
+
+# Model Checkpoints & Weights
+checkpoint/
+checkpoints/
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Mac OS
+.DS_Store
